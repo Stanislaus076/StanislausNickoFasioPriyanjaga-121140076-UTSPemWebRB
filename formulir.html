@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Halaman Formulir</title>
+</head>
+<body>
+    <header>
+        <h1>UTS Pemrograman Web RB</h1>
+        <img src="Logo_ITERA.png" alt="Logo" width="300" height="300">
+    </header>
+    <div class="sidebar">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="utama.html">Halaman Utama</a></li>
+                    <li><a href="formulir.html">Halaman Formulir</a></li>
+                    <li><a href="tabel.html">Halaman Tabel</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+    <div class="main-content">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="proses_form.php" method="get">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" required>
+            <br>
+            <label for="nim">NIM:</label><br>
+            <input type="text" id="nim" name="nim" required>
+            <br>
+            <label for="prodi">Program Studi:</label><br>
+            <input type="text" id="prodi" name="prodi" required>
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <label for="jenis-kelamin">Jenis Kelamin:</label><br>
+            <input type="radio" id="laki" name="jenis-kelamin" value="Laki-laki" required>
+            <label for="laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan" required>
+            <label for="perempuan">Perempuan</label>
+            <br>
+            <label for="tgl-lahir">Tanggal Lahir:</label><br>
+            <input type="date" id="tgl-lahir" name="tgl-lahir" required>
+            <br>
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" required></textarea>
+            <br>
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Hak Cipta. Dibuat oleh Stanislaus Nicko Fasio Priyanjaga</p>
+    </footer>
+</body>
+</html>
